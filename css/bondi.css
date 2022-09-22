@@ -1,0 +1,157 @@
+:root{
+    --dark-color: deeppink ;
+}
+body {
+    font-family: "roboto",sans-serif;
+}
+.navbar{
+background-color: var(--dark-color);
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: pink;
+}
+.search{
+    border-left: 1px solid pink;
+}
+.search svg{
+    color :pink;
+}
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.landing{
+    background-color: deeppink;
+    min-height: calc(100vh - 70px);
+}
+.main-btn{
+    background-color: pink;
+    color: deeppink;
+    padding: 0.5rem 1rem;
+}
+.main_title::after{
+    content: '';
+    width: 120px;
+    height: 2px;
+    background-color: pink;
+    position: absolute;
+    bottom: -20px ;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number{
+    font-size: 12rem;
+    color: mistyrose;
+}
+.features .icon-holder .icon{
+    color: pink;
+}
+.features .feat h4 {
+    color: gold;
+}
+.our-work{
+    background-color:mistyrose ;
+}
+.our-work ul .active{
+    background-color: deeppink;
+    color: pink;
+
+}
+.our-work ul li{
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+
+}
+.our-work ul li:not(.active):hover{
+    color: deeppink;
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #ffc0cbbd;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 200%;
+    transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover:before{
+    transform: translateX(0);
+}
+.dis{
+    width: 500px;
+}
+.team{
+    background-color: mistyrose;
+}
+.team h2{
+    color: gold ;
+}
+.team .box h4{
+    background-color: deeppink;
+}
+.project{
+    background-color: deeppink;
+}
+.subscribe{
+    background-color: gold;
+}
+.subscribe .text{
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe ::placeholder{
+    color: white;
+}
+.subscribe input[type="submit"]{
+    background-color: deeppink;
+    color: gold;
+}
+.subscribe_p{
+    color: deeppink;
+}
+.footer{
+    background-color: deeppink;
+}
+.footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+  }
+  .footer .facebook {
+    background-color: #1877f2;
+  }
+  .footer .twitter {
+    background-color: #1da1f2;
+  }
+  .footer .linkedin {
+    background-color: #0077b5;
+  }
+  .footer .youtube {
+    background-color: #ff0000;
+  }
